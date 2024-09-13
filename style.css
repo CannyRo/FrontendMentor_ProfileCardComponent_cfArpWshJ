@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+:root{
+    /* == COLORS == */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-blue-shadow: hsla(197, 85%, 20%, 0.5048);
+    /* --Dark-gray: hsl(0, 0%, 59%);  */
+    --Light-gray: hsl(228, 9%, 92%); 
+    --White: hsl(0, 0%, 100%);
+    /* == FONTS == */
+    --main-font: 'Kumbh Sans';
+}
+body{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    font-family: var(--main-font), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    line-height: 100%;
+    font-weight: 400;
+    color: var(--Very-dark-desaturated-blue);
+    background-color: var(--Dark-cyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 38.875rem auto;
+    background-position: left -410px top -356px, right -412px bottom -312px;
+    overflow: hidden;
+}
+main{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 1.53125rem;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 21,875rem;
+    background-color: var(--White);
+    border-radius: 0.9375rem;
+    box-shadow: 0 3.125rem 6.25rem -1.25rem var(--Dark-blue-shadow);
+    overflow: hidden;
+}
+.card::before{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 8.75rem;
+    background-image: url('./images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-size: auto 9.3125rem;
+    background-position: center;
+}
+.card__header{
+    z-index: 2;
+    display: flex;
+    padding-top: 5.4375rem;
+}
+.card__avatar{
+    display: flex;
+    width: 6.625rem;
+    height: 6.625rem;
+    border: 0.3125rem  solid var(--White);
+    border-radius: 6.625rem;
+}
+.card__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.1875rem;
+    width: 100%;
+}
+.card__title{
+    margin-bottom: 0.5625rem;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    font-weight: 700;
+}
+.card__title-year{
+    margin-left: 0.5rem;
+    line-height: 1.4375rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+.card__city{
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+.card__statistics{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    border-top: 0.0625rem solid var(--Light-gray);
+}
+.card__statistics-max{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 14.625rem;
+}
+.card__statistics--item{
+    text-align: center;
+    padding-bottom: 0.0625rem;
+}
+.card__statistics-bold{
+    margin-bottom: 0.3125rem;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+}
+.card__statistics-small{
+    font-size: 0.625rem;
+    line-height: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 0.09375rem;
+    color: var(--Dark-grayish-blue);
+}
+/* FOOTER */
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.footer--link{
+    font-weight: 700;
+    letter-spacing: 0.0625rem;
+    text-decoration: none;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+/* FOOTER */
