@@ -15,13 +15,16 @@ body{
     position: relative;
     display: flex;
     min-height: 100vh;
-    /* font-family: var(--main-font), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-    font-family: var(--main-font);
+    font-family: var(--main-font), 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1rem;
     line-height: 100%;
     font-weight: 400;
     color: var(--Very-dark-desaturated-blue);
     background-color: var(--Dark-cyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 38.875rem auto;
+    background-position: left -410px top -356px, right -412px bottom -312px;
     overflow: hidden;
 }
 main{
