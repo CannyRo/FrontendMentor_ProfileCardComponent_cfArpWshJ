@@ -40,7 +40,7 @@ main{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 21,875rem;
+    max-width: 21.875rem;
     background-color: var(--White);
     border-radius: 0.9375rem;
     box-shadow: 0 3.125rem 6.25rem -1.25rem var(--Dark-blue-shadow);
@@ -101,7 +101,7 @@ main{
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 2.875rem;
     width: 100%;
     border-top: 0.0625rem solid var(--Light-gray);
 }
@@ -109,7 +109,7 @@ main{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 14.625rem;
+    max-width: 15.625rem;
 }
 .card__statistics--item{
     text-align: center;
@@ -128,7 +128,6 @@ main{
     letter-spacing: 0.09375rem;
     color: var(--Dark-grayish-blue);
 }
-/* FOOTER */
 .footer{
     position: absolute;
     bottom: 0;
@@ -141,5 +140,9 @@ main{
     text-decoration: none;
     color: var(--Very-dark-desaturated-blue);
 }
-
-/* FOOTER */
+@media(min-width: 992px){
+    body{
+        background-size: 61.125rem auto;
+        background-position: left -285px top -510px, right -230px bottom -632px;
+    }
+}
